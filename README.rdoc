@@ -18,3 +18,16 @@ user stories:
 
 ===== test ideas
 A TWEET without a special word is not accepted
+
+
+
+USER
+----
+username
+email
+password hash
+protect_tweets? binary
+Fake Name
+Location
+Web site
+bio
