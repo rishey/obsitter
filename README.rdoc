@@ -1,28 +1,20 @@
-== README
+a certain type of twitter clone - richard bluestein richard@bluestein.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+user stories:
+1- person CRUDs user
+2- person CRUDs tweet
+    tweets must have keywords to be valid
+3- person sees all tweets from everyone
+4- person sees his/her own tweets
+5- person logs in
+6- person logs out
+7- user CRUDs followed people
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+
+
+
+===== test ideas
+A TWEET without a special word is not accepted
