@@ -25,9 +25,9 @@ USER
 ----
 username
 email
-password hash
-protect_tweets? binary
-Fake Name
+password digest
+protect_tweets boolean
+full Name
 Location
 Web site
 bio
