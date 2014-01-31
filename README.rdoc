@@ -31,3 +31,10 @@ full Name
 Location
 Web site
 bio
+
+TODO:
+switch to postgres
+
+
+test data:
+username: "bloatedlesbian", email: "bloatedlesbian@gmail.com", password_digest: "$2a$10$3Q8SArbeahLHdCAiXrsEvu.1JPKkfranUDsgBT5znikB...", protect_tweets: false, full_name: "Madge Weinstein", location: "Chicago", web_site: "http://yeastradio.com", bio: "blah blah blah blah"
