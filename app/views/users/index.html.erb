@@ -1,9 +1,11 @@
 <h1>All Users</h1>
 <% @users.each do |user| %>
   <%= user.username %><br>
-  <%= user.email %><br>
+  <a href="mailto:<%= user.email %>"><%= user.email %></a><br>
   <%= user.full_name%><br>
-  <%= user.web_site %><br>
+  <%= user.location %><br>
+  <a href="<%= user.web_site %>"><%= user.web_site %></a><br>
   <%= user.bio %><br>
+  Created: <%= user.created_at %><br>
   <br>
 <% end %>
