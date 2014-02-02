@@ -1,1 +1,9 @@
-index.html.erb
+<h1>All Users</h1>
+<% @users.each do |user| %>
+  <%= user.username %><br>
+  <%= user.email %><br>
+  <%= user.full_name%><br>
+  <%= user.web_site %><br>
+  <%= user.bio %><br>
+  <br>
+<% end %>
