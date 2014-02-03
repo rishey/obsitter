@@ -1,6 +1,6 @@
-show.html.erb <br>
-<%= @user.email %><br>
+show.html.erb (users)<br>
+<%= current_user.email %><br>
 LOGGED IN: <%= logged_in? %><br>
 session hash: <%= session[:user_id] %><br>
-current_user: <%= current_user %><br>
+current_user: <%= current_user.username %><br>
 NEED A PARTIAL YAY

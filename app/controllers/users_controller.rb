@@ -17,7 +17,15 @@ class UsersController < ApplicationController
 
 
   def show
-    @user = User.find(params[:id])
+    if current_user
+      if params[:id].to_i != current_user.id
+        @error = "you can only view YOUR profile."
+        render 'sessions/new'
+      end
+    else
+      @error = "you need to be logged in to see your profile"
+      render 'sessions/new'
+    end
   end
 
   def create
