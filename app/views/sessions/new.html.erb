@@ -1,1 +1,36 @@
 <h1>New Session</h1>
+<% if current_user %>
+  <p>You're already logged in!</p>
+<% else %>
+  <h2>Signup</h2>
+  <%= form_tag users_path, :id => "signup" do %>
+    <%= label_tag "username", "Username" %>
+    <%= text_field_tag "signup[username]" %> <br>
+
+    <%= label_tag "email", "Email" %>
+    <%= email_field_tag "signup[email]" %> <br>
+
+    <%= label_tag 'password', "Password" %>
+    <%= password_field_tag "signup[password]" %> <br>
+
+    <%= label_tag "password_confirmation", "Password Confirmation" %>
+    <%= password_field_tag "signup[password_confirmation]" %> <br>
+
+    <%= label_tag "protect_tweets", "Protect Tweets" %>
+    <%= check_box_tag "signup[protect_tweets]" %><br>
+
+    <%= label_tag "full_name", "Full Name" %>
+    <%= text_field_tag "signup[full_name]" %><br>
+
+    <%= label_tag "location", "Location" %>
+    <%= text_field_tag "signup[location]" %><br>
+
+    <%= label_tag "web_site", "Web Site URL" %>
+    <%= url_field_tag "signup[url]" %><br>
+
+    <%= label_tag "bio", "Bio" %>
+    <%= text_area_tag "signup[bio]" %><br>
+
+     <%= submit_tag "Signup" %>
+  <% end %>
+<% end %>
