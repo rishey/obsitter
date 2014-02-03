@@ -12,7 +12,6 @@
   <h1 class="site-name">Obsitter</h1>
   <nav>
     <ul>
-
       <% if current_user %>
         <li> Welcome <%= current_user.full_name %><%= link_to "Sign out", logout_path, id: "sign_out" %> </li>
         <li><%= link_to "My Profile", user_path(current_user) %></li>
