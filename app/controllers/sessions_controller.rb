@@ -1,7 +1,5 @@
 class SessionsController < ApplicationController
   def new
-    # p session[:user_id]
-    # p current_user
   end
 
   def create

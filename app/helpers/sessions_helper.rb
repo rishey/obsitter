@@ -11,4 +11,5 @@ module SessionsHelper
       false
     end
   end
+
 end
