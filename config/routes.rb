@@ -3,7 +3,7 @@ Obsitter::Application.routes.draw do
   post "/login" => "sessions#create"
   get '/logout', to: 'sessions#destroy'
   delete "/logout" => "sessions#destroy"
-  root to: "users#index"
+  root to: "blurts#index"
   resources :users
   resources :blurts
 
