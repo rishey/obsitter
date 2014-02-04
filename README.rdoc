@@ -1,7 +1,7 @@
 a certain type of twitter clone - richard bluestein richard@bluestein.com
 
 user stories:
-1- person CRUDs user
+1- person CRUDs user DONE
 2- person CRUDs tweet
     tweets must have keywords to be valid
 3- person sees all tweets from everyone
@@ -31,6 +31,11 @@ full Name
 Location
 Web site
 bio
+
+BLURT
+-----
+body
+user_id
 
 TODO:
 switch to postgres
