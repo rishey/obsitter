@@ -1,8 +1,3 @@
-show.html.erb (users)<br>
-<%= current_user.email %><br>
-LOGGED IN: <%= logged_in? %><br>
-session hash: <%= session[:user_id] %><br>
-current_user: <%= current_user.username %><br>
-NEED A PARTIAL YAY
-
+<h1>Profile for <%= current_user.full_name %></h1>
 <%= render 'form' %>
+<%= link_to "Delete", user_path(current_user), method: :delete, data: { confirm: 'Are you sure?' } %>
