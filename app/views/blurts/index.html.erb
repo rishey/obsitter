@@ -1,6 +1,7 @@
 <h1>All Blurts</h1>
 <% @blurts.each do |blurt| %>
-  Blurted by <%= blurt.user.full_name %>:<br>
+
+Blurted by  <%= link_to "#{blurt.user.username}", user_path(blurt.user)%>:<br>
   <%= blurt.body %></br>
   <br>
 <% end %>
