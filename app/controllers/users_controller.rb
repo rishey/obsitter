@@ -27,6 +27,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    User.destroy(current_user)
+    session[:user_id] = nil
+    redirect_to :root
   end
 
   def update
