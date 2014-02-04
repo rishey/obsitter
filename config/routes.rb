@@ -4,6 +4,8 @@ Obsitter::Application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   delete "/logout" => "sessions#destroy"
   root to: "users#index"
+  resources :users
+  resources :blurts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -19,7 +21,7 @@ Obsitter::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-      resources :users
+
   # Example resource route with options:
   #   resources :products do
   #     member do

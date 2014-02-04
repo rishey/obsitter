@@ -1,0 +1,6 @@
+<h1>All Blurts</h1>
+<% @blurts.each do |blurt| %>
+  Blurted by <%= blurt.user.full_name %>:<br>
+  <%= blurt.body %></br>
+  <br>
+<% end %>
