@@ -7,6 +7,10 @@ class BlurtsController < ApplicationController
 
   end
 
+
+  def new
+  end
+  
   def create
   end
 
@@ -14,7 +18,7 @@ class BlurtsController < ApplicationController
   end
 
   def update
- end
+  end
 
  private
 
