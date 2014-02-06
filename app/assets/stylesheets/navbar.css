@@ -6,6 +6,8 @@
   width: 100%;
   color: white;
   display: inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+
 }
 
 .top-nav h1 {
@@ -31,4 +33,5 @@ li, a {
 
 .container {
   margin-top: 100px;
+
 }
