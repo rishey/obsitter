@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
+    @error = session[:error]
     @users = User.all
   end
 
