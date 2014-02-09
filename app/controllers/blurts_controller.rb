@@ -6,7 +6,7 @@ class BlurtsController < ApplicationController
   end
 
   def show
-
+    @blurt = Blurt.find(params[:id])
   end
 
 

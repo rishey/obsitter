@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @blurt.body %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @blurt.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_blurt_path(@blurt) %> |
+<%= link_to 'Back', blurts_path %>
