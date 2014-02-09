@@ -1,0 +1,22 @@
+<%= form_for(@blurt) do |f| %>
+  <% if @blurt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blurt.errors.count, "error") %> prohibited this blurt from being saved:</h2>
+
+      <ul>
+      <% @blurt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

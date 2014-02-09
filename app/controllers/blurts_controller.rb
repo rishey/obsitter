@@ -12,7 +12,9 @@ class BlurtsController < ApplicationController
 
   def new
     if logged_in?
+      @blurt = Blurt.new
       # renders new blurt by default
+
     else
       session[:error] = "You need to be logged in to blurt."
       redirect_to blurts_path
