@@ -13,9 +13,9 @@
 
   <nav>
     <ul>
-      <li>logged in(TEST): <%= logged_in? %></li>
       <% if current_user %>
-        <li> Welcome <%= current_user.full_name %><%= link_to "Sign out", logout_path, id: "sign_out" %> </li>
+        <li><%= current_user.full_name %></li>
+        <li><%= link_to "Sign out", logout_path, id: "sign_out" %> </li>
         <li><%= link_to "My Profile", user_path(current_user) %></li>
       <% else %>
         <li><%= link_to "Sign In or Sign Up", "/login" %></li>
