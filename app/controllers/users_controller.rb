@@ -34,7 +34,6 @@ class UsersController < ApplicationController
   end
 
   def update
-
     if current_user.update(params[:user].permit(:username, :email, :password, :password_confirmation, :protect_tweets, :full_name, :web_site, :location, :bio))
       redirect_to current_user
     else

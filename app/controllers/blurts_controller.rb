@@ -9,7 +9,6 @@ class BlurtsController < ApplicationController
     @blurt = Blurt.find(params[:id])
   end
 
-
   def new
     if logged_in?
       @blurt = Blurt.new
