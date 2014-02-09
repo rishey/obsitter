@@ -13,8 +13,7 @@ class BlurtsController < ApplicationController
   def new
     if logged_in?
       @blurt = Blurt.new
-      # renders new blurt by default
-
+      @blurt.user_id = current_user.id
     else
       session[:error] = "You need to be logged in to blurt."
       redirect_to blurts_path
@@ -22,6 +21,16 @@ class BlurtsController < ApplicationController
   end
 
   def create
+    @blurt = Blurt.new(blurt_params)
+    respond_to do |format|
+      if @blurt.save
+        format.html { redirect_to @blurt, notice: 'blurt was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @blurt }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @blurt.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
@@ -32,7 +41,7 @@ class BlurtsController < ApplicationController
 
  private
 
-   def user_params
+   def blurt_params
        params.require(:blurt).permit(:body, :user_id)
    end
 
