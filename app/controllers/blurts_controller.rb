@@ -2,7 +2,7 @@ class BlurtsController < ApplicationController
   def index
     @error = session[:error]
     session[:error]= nil
-    @blurts = Blurt.all
+    @blurts = Blurt.all.reverse
   end
 
   def show
