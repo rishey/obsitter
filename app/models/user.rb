@@ -1,6 +1,14 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_many :blurts
-  validates :username, :email, presence: true
-  validates :username, :email, uniqueness: true
+  validates :username, :email,   presence: true
+  validates :username, :email, uniqueness: { case_sensitive: false }
+  after_initialize :init
+
+  private
+  def init
+    if self.new_record? && self.protect_tweets == false
+      self.protect_tweets = false
+    end
+  end
 end
