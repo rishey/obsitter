@@ -17,7 +17,7 @@
         <li><%= link_to "sign out", logout_path, id: "sign_out" %> </li>
         <li><%= link_to "#{current_user.username}", user_path(current_user) %></li>
       <% else %>
-        <li><%= link_to "sign In or sign Up", "/login" %></li>
+        <li><%= link_to "sign In or sign Up", login_path %></li>
       <% end %>
     </ul>
   </nav>
