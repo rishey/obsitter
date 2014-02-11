@@ -14,6 +14,7 @@
   <nav>
     <ul>
       <% if current_user %>
+        <li><%= link_to "add blurt", new_blurt_path %></li>
         <li><%= link_to "sign out", logout_path, id: "sign_out" %> </li>
         <li><%= link_to "#{current_user.username}", user_path(current_user) %></li>
       <% else %>
