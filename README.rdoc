@@ -1,3 +1,7 @@
+TODO:
+  REMOVE BLURTS WHEN USER IS DELETED
+  TEST DBASE
+
 a certain type of twitter clone - richard bluestein richard@bluestein.com
 
 user stories:
