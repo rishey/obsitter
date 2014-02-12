@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :blurts
   validates :username, :email,   presence: true
   validates :username, :email, uniqueness: { case_sensitive: false }
+  validates :web_site, :url   => true
   after_initialize :init
 
   private
