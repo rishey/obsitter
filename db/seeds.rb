@@ -26,3 +26,8 @@ user3.save
   user2.save
   user3.save
 end
+
+SpecialWord.create(name:"monkey")
+SpecialWord.create(name:"elephant")
+SpecialWord.create(name:"whale")
+SpecialWord.create(name:"human")
