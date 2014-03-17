@@ -7,8 +7,12 @@ class BlurtsController < ApplicationController
 
   def show
     @blurt = Blurt.find(params[:id])
-          @user = User.find(current_user.id)
+    @user = User.find(current_user.id)
+  end
 
+  def show4user
+    @blurts = Blurt.where(user_id: params[:id])
+    @user = User.find(params[:id])
   end
 
   def new

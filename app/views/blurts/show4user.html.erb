@@ -1,0 +1,8 @@
+<%= @error %>
+<h1>All Blurts</h1>
+<% @blurts.each do |blurt| %>
+<div class="blurt">
+  Blurted by  <%= link_to "#{blurt.user.username}", user_path(blurt.user)%>at <%= blurt.created_at %><br>
+  <span class="blurt-body"> <%= blurt.body %></br></span><br>
+</div>
+<% end %>
