@@ -43,7 +43,7 @@ user_id
 
 TODO:
 switch to postgres
-
+if you are logged in, clicking username in header bar should bring to that person's blurts
 
 test data:
 username: "bloatedlesbian", email: "bloatedlesbian@gmail.com", password_digest: "$2a$10$3Q8SArbeahLHdCAiXrsEvu.1JPKkfranUDsgBT5znikB...", protect_tweets: false, full_name: "Madge Weinstein", location: "Chicago", web_site: "http://yeastradio.com", bio: "blah blah blah blah"
