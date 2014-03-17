@@ -11,7 +11,7 @@ class BlurtsController < ApplicationController
   end
 
   def show4user
-    @blurts = Blurt.where(user_id: params[:id])
+    @blurts = Blurt.where(user_id: params[:id]).reverse
     @user = User.find(params[:id])
   end
 

@@ -16,7 +16,8 @@
       <% if current_user %>
         <li><%= link_to "add blurt", new_blurt_path %></li>
         <li><%= link_to "sign out", logout_path, id: "sign_out" %> </li>
-        <li><%= link_to "#{current_user.username}", show4user_path(current_user) %></li>
+        <li><%= link_to "#{current_user.username}", user_path(current_user) %></li>
+        <li><%= link_to "my blurts", show4user_path(current_user) %></li>
       <% else %>
         <li><%= link_to "sign In or sign Up", login_path %></li>
       <% end %>
