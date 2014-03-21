@@ -1,0 +1,9 @@
+<%= @error %>
+<h1>All Special Words</h1>
+<% @specialwords.each do |specialword| %>
+<div class="blurt">
+
+<span class="blurt-body"> <%= specialword.name %></br></span>
+  <br>
+</div>
+<% end %>
